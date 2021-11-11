@@ -20,13 +20,10 @@ impl fmt::Display for Point2D {
 }
 
 fn main() {
-    let big_range = MinMax(-300, 300);
-    let small_range = MinMax(-3, 3);
-
     println!(
         "The big range is {big} and the small is {small}.",
-        small = small_range,
-        big = big_range
+        small = MinMax(-3, 3),
+        big = MinMax(-300, 300)
     );
 
     println!("{}", Point2D { x: 2.3, y: 9.2 });

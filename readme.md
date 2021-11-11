@@ -1,4 +1,4 @@
-# rust
+# rust playground
 
 ![Lines Of Code](https://img.shields.io/tokei/lines/github.com/UltiRequiem/rust?color=blue&label=Total%20Lines)
 
