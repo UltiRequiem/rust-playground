@@ -1,5 +1,7 @@
 # rust
 
+![Lines Of Code](https://img.shields.io/tokei/lines/github.com/UltiRequiem/rust?color=blue&label=Total%20Lines)
+
 A language empowering everyone
 to build reliable and efficient software.
 
