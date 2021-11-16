@@ -1,7 +1,12 @@
-#[derive(Debug)]
 struct Person {
     name: String,
     age: u8,
+}
+
+impl std::fmt::Display for Person {
+    fn fmt(&self, f: &mut std::fmt::Formatter) -> std::fmt::Result {
+        write!(f, "{} is a {} years old human.", self.name, self.age)
+    }
 }
 
 struct Unit;
@@ -14,7 +19,7 @@ fn main() {
         age: 27,
     };
 
-    println!("{:?}", peter_parker);
+    println!("{}", peter_parker);
     let _unit = Unit;
 
     let pair = Pair(1, 0.1);
