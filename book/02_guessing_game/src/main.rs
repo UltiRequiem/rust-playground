@@ -3,24 +3,37 @@ use std::cmp::Ordering;
 use std::io;
 
 fn main() {
-    println!("Guess the number:");
+    println!("GuessTheNumber V1");
 
-    let secret_number = rand::thread_rng().gen_range(1..10);
+    let secret_number = rand::thread_rng().gen_range(1..100);
 
-    //  A mutable variable that is currently bound to a new, empty instance of a String.
-    let mut guess = String::new();
+    loop {
+        println!("Guess the number:");
 
-    io::stdin()
-        .read_line(&mut guess)
-        .expect("Failed to read the user input.");
+        let mut guess = String::new();
 
-    let guess: u32 = guess.trim().parse().expect("Please type a number!");
+        io::stdin()
+            .read_line(&mut guess)
+            .expect("Failed to read line");
 
-    match guess.cmp(&secret_number) {
-        Ordering::Less => println!("Too small!"),
-        Ordering::Greater => println!("Too big!"),
-        Ordering::Equal => println!("You win!"),
+        let guess: u32 = match guess.trim().parse() {
+            Ok(num) => num,
+            Err(_) => {
+                println!("Please enter a number.");
+                continue;
+            }
+        };
+
+        match guess.cmp(&secret_number) {
+            Ordering::Less => println!("Too small!"),
+            Ordering::Greater => println!("Too big!"),
+            Ordering::Equal => {
+                println!("You win!");
+                println!("The secret number is: {}!", secret_number);
+                break;
+            }
+        }
     }
 
-    println!("The secret number is: {}!", secret_number);
+    println!("Good job!")
 }
