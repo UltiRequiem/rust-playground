@@ -19,6 +19,8 @@ to build reliable and efficient software.
 
 - [How is Rust compiled to machine code?](https://stackoverflow.com/questions/43385142)
 
+- [Why does printing a pointer print the same thing as printing the dereferenced pointer?](https://stackoverflow.com/questions/27852613)
+
 ## License
 
 All here is licensed under the MIT License.
