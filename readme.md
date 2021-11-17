@@ -15,6 +15,10 @@ to build reliable and efficient software.
 
 - [Getting started with Rust](https://stackoverflow.blog/2021/03/15/getting-started-with-rust)
 
+## Cool Rust Related Questions
+
+- [How is Rust compiled to machine code?](https://stackoverflow.com/questions/43385142)
+
 ## License
 
 All here is licensed under the MIT License.
