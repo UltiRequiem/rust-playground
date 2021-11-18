@@ -13,6 +13,8 @@ to build reliable and efficient software.
 
 - [Rust by Example](https://doc.rust-lang.org/stable/rust-by-example)
 
+- [Take your first steps with Rust](https://docs.microsoft.com/en-us/learn/paths/rust-first-steps)
+
 - [Getting started with Rust](https://stackoverflow.blog/2021/03/15/getting-started-with-rust)
 
 ## Cool Rust Related Questions
