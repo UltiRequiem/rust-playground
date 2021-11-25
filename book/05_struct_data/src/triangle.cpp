@@ -1,6 +1,7 @@
 #include <iostream>
 
-struct Rectangle {
+class Rectangle {
+public:
   int width;
   int height;
   int area() { return width * height; }
