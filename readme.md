@@ -25,11 +25,11 @@ to build reliable and efficient software.
 
 ## Editor Setup
 
-I use [Neovim](https://github.com/UltiRequiem/UltiVim),
-[this](https://github.com/UltiRequiem/UltiVim/blob/main/ftplugin/rust.lua) is
-all the Rust related configuration I have.
+I use [Neovim](https://neovim.io), [config](https://github.com/UltiRequiem/UltiVim).
 
 ![Screenshot](./assets/editor_screenshot.png)
+
+![Screenshot Two](./assets/editor_screenshot_two.png)
 
 > I'm usign [rust-analyzer](https://github.com/fannheyward/coc-rust-analyzer) for autocomplete, docs, code actions, formatting, etc
 
