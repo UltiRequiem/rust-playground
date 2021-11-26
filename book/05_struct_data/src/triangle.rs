@@ -21,4 +21,14 @@ fn main() {
         "The area of the rectangle is {} square pixels.",
         rect.area()
     );
+
+    let rect_two = &Rectangle {
+        height: 23,
+        ..*rect
+    };
+
+    println!(
+        "The area of the second rectangle is {} square pixels.",
+        rect_two.area()
+    );
 }

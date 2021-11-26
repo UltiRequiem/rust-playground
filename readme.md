@@ -23,6 +23,16 @@ to build reliable and efficient software.
 
 - [Why does printing a pointer print the same thing as printing the dereferenced pointer?](https://stackoverflow.com/questions/27852613)
 
+## Editor Setup
+
+I use [Neovim](https://github.com/UltiRequiem/UltiVim),
+[this](https://github.com/UltiRequiem/UltiVim/blob/main/ftplugin/rust.lua) is
+all the Rust related configuration I have.
+
+![Screenshot](./assets/editor_screenshot.png)
+
+> I'm usign [rust-analyzer](https://github.com/fannheyward/coc-rust-analyzer) for autocomplete, docs, code actions, formatting, etc
+
 ## License
 
 All here is licensed under the MIT License.
