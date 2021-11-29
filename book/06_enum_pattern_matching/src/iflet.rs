@@ -1,6 +1,6 @@
 fn main() {
     let config_max = Some(3);
-    /// NIce
+    /// Nice
     if let Some(max) = config_max {
         println!("{}", max);
     }

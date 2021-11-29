@@ -1,6 +1,8 @@
-use std::io::{Read, Write};
-use std::net::{TcpListener, TcpStream};
-use std::thread;
+use std::{
+    io::{Read, Write},
+    net::{TcpListener, TcpStream},
+    thread,
+};
 
 fn handle_read(mut stream: &TcpStream) {
     let mut buf = [0u8; 4096];

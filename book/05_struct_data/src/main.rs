@@ -12,16 +12,20 @@ impl fmt::Display for Person {
 }
 
 impl Person {
+    fn new(name: &str, age: usize) -> Person {
+        Person {
+            name: name.to_string(),
+            age,
+        }
+    }
+
     fn say_hi(&self) {
         println!("Hi, I'm {} and {} years old.", self.name, self.age);
     }
 }
 
 fn main() {
-    let diah = &Person {
-        name: String::from("Diah"),
-        age: 15,
-    };
+    let diah = Person::new("Diah", 15);
 
     println!("{}", diah);
 
