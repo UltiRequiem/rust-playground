@@ -20,7 +20,8 @@ fn main() {
     };
 
     println!("{}", peter_parker);
-    let _unit = Unit;
+
+    let unit = Unit;
 
     let pair = Pair(1, 0.1);
 
