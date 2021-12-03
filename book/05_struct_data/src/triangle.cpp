@@ -1,6 +1,6 @@
 #include <iostream>
 
-class Rectangle {
+struct Rectangle {
 public:
   int width;
   int height;

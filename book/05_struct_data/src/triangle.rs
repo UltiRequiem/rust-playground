@@ -15,17 +15,14 @@ impl Rectangle {
 }
 
 fn main() {
-    let rect = &Rectangle::new(50, 60);
+    let rect = Rectangle::new(50, 60);
 
     println!(
         "The area of the rectangle is {} square pixels.",
         rect.area()
     );
 
-    let rect_two = &Rectangle {
-        height: 23,
-        ..*rect
-    };
+    let rect_two = &Rectangle { height: 23, ..rect };
 
     println!(
         "The area of the second rectangle is {} square pixels.",
