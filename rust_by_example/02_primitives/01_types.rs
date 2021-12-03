@@ -9,9 +9,11 @@ fn main() {
     let default_integer = 7;
 
     let mut inferred_type = 12;
+    println!("inferred_type: {}", inferred_type);
     inferred_type = 4294967296i64;
 
     let mut mutable = 12;
+    println!("mutable: {}", mutable);
     mutable = 21;
 
     println!(
