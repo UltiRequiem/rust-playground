@@ -1,27 +1,6 @@
-use std::collections::HashMap;
-
 const NAME: &str = "Diah";
 
-pub fn main_one() {
-    let mut scores = HashMap::new();
-
-    scores.insert(String::from("Blue"), 10);
-    scores.insert(String::from("Yellow"), 50);
-
-    println!("{:?}", scores);
-    println!("{}", scores.get("Blue").unwrap());
-}
-
-pub fn main_three() {
-    let teams = vec![String::from("Blue"), String::from("Yellow")];
-    let initial_scores = vec![10, 50];
-
-    let scores: HashMap<_, _> = teams.iter().zip(initial_scores.iter()).collect();
-
-    println!("{:?}", scores);
-}
-
-pub fn main_two() {
+fn main() {
     let mut my_vec: Vec<i64> = Vec::new();
 
     my_vec.push(1);
