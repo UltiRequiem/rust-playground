@@ -14,17 +14,17 @@ impl<'a> Person<'a> {
             ..self
         }
     }
-}
 
-fn check_age(arg: Person) {
-    match arg.age {
-        Some(age) => println!("{} is {}.", arg.name, age),
-        None => println!("Who knows how old {} is?", arg.name),
+    fn check_age(self) {
+        match self.age {
+            Some(age) => println!("{} is {}.", self.name, age),
+            None => println!("Who knows how old {} is?", self.name),
+        }
     }
 }
 
 fn main() {
-    check_age(Person::new("Sally").age(27));
-    check_age(Person::new("Bill"));
-    check_age(Person::new("Pedro").age(34).age(23));
+    Person::new("Sally").age(27).check_age();
+    Person::new("Bill").check_age();
+    Person::new("Pedro").age(34).age(23).check_age();
 }
