@@ -8,11 +8,9 @@ impl<'a> Person<'a> {
         Person { name, age: None }
     }
 
-    fn age(self, age: u8) -> Self {
-        Person {
-            age: Some(age),
-            ..self
-        }
+    fn set_age(mut self, age: u8) -> Self {
+        self.age = Some(age);
+        self
     }
 
     fn check_age(self) {
@@ -24,7 +22,7 @@ impl<'a> Person<'a> {
 }
 
 fn main() {
-    Person::new("Sally").age(27).check_age();
+    Person::new("Sally").set_age(27).check_age();
     Person::new("Bill").check_age();
-    Person::new("Pedro").age(34).age(23).check_age();
+    Person::new("Pedro").set_age(34).set_age(23).check_age();
 }
