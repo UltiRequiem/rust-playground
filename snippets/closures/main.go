@@ -12,5 +12,7 @@ func getMultiplier(multiplier int) func(int) int {
 
 func main() {
 	double := getMultiplier(2)
-	fmt.Printf("The double of %d is %d.", 10, double(10))
+	for i := 1; i < 7; i++ {
+		fmt.Printf("The double of %d is %d.\n", i, double(i))
+	}
 }

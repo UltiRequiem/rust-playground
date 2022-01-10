@@ -9,7 +9,9 @@ auto get_multiplier(int factor) {
 int main() {
   auto multiplier = get_multiplier(2);
 
-  std::cout << multiplier(3) << std::endl;
+  for (int i = 1; i < 8; i++) {
+    std::cout << multiplier(i) << std::endl;
+  }
 
   return 0;
 }
