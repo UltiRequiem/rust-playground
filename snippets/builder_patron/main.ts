@@ -20,7 +20,7 @@ class Person {
     console.log(
       this.age
         ? `${this.name} is ${this.age} years old.`
-        : `Who knows how old ${this.name} is?`
+        : `Who knows how old ${this.name} is?`,
     );
   }
 }

@@ -2,8 +2,7 @@
 
 ![Lines Of Code](https://img.shields.io/tokei/lines/github.com/UltiRequiem/rust?color=blue&label=Total%20Lines)
 
-A language empowering everyone
-to build reliable and efficient software.
+A language empowering everyone to build reliable and efficient software.
 
 ## Resources
 
@@ -25,13 +24,15 @@ to build reliable and efficient software.
 
 ## Editor Setup
 
-I use [Neovim](https://neovim.io), [config](https://github.com/UltiRequiem/UltiVim).
+I use [Neovim](https://neovim.io),
+[config](https://github.com/UltiRequiem/UltiVim).
 
 ![Screenshot](./assets/editor_screenshot.png)
 
 ![Screenshot Two](./assets/editor_screenshot_two.png)
 
-> I'm usign [rust-analyzer](https://github.com/fannheyward/coc-rust-analyzer) for autocomplete, docs, code actions, formatting, etc
+> I'm usign [rust-analyzer](https://github.com/fannheyward/coc-rust-analyzer)
+> for autocomplete, docs, code actions, formatting, etc
 
 ## License
 
