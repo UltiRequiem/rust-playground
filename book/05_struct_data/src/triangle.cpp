@@ -1,17 +1,25 @@
 #include <iostream>
 
-struct Rectangle {
+using std::cout;
+using std::endl;
+
+class Rectangle {
 public:
+  Rectangle(int width, int height) {
+    this->width = width;
+    this->height = height;
+  }
+
   int width;
   int height;
+
   int area() { return width * height; }
 };
 
 int main() {
-  Rectangle rect = {50, 60};
+  auto r = Rectangle(3, 5);
 
-  std::cout << "The area of the rectangle is " << rect.area()
-            << " square pixels." << std::endl;
+  cout << "The area of the rectangle is " << r.area() << "." << endl;
 
   return 0;
 }

@@ -31,7 +31,7 @@ I use [Neovim](https://neovim.io),
 
 ![Screenshot Two](./assets/editor_screenshot_two.png)
 
-> I'm usign [rust-analyzer](https://github.com/fannheyward/coc-rust-analyzer)
+> I'm using [rust-analyzer](https://github.com/fannheyward/coc-rust-analyzer)
 > for autocomplete, docs, code actions, formatting, etc
 
 ## License
